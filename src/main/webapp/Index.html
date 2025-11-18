@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tienda de Libros</title>
+</head>
+<body>
+
+<h1>Tienda de Libros</h1>
+
+<p><strong>Saldo disponible:</strong> <span id="saldo">100</span> €</p>
+
+<label>Selecciona un libro:
+<select id="libro">
+    <option value="0" data-precio="15">El Quijote - 15€</option>
+    <option value="1" data-precio="22">1984 - 22€</option>
+    <option value="2" data-precio="12">La Metamorfosis - 12€</option>
+</select>
+</label>
+
+<br><br>
+
+<label>Cantidad:
+<input type="number" id="cantidad" min="1">
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="terminos"> Acepto los términos y condiciones
+</label>
+
+<br><br>
+
+<button id="agregar">Agregar</button>
+
+<h2>Carrito</h2>
+<ul id="lista"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
